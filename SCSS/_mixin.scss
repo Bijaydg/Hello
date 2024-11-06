@@ -1,0 +1,15 @@
+@mixin responsive
+{
+    @media (max-width:480px){
+        @content;
+    }
+}
+
+@mixin flex($jc: space-between, $ai: start, $wrap:wrap)
+{
+    display:flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $wrap;
+    
+}
